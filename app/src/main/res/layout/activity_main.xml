@@ -7,41 +7,14 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <LinearLayout
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.student.myapplication.Fragment_Button"
+        tools:layout="@layout/fragment_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" />
 
-        <Button
-            android:id="@+id/btn_A"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nút A"/>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btn_B"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nút B"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btn_C"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nút C"/>
-
-    </LinearLayout>
 
 
 </LinearLayout>
