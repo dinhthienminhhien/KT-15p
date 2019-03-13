@@ -18,4 +18,11 @@ public class Fragment_InFo  extends Fragment{
         tv_fr = (TextView)view.findViewById(R.id.tv_fr);
         return view ;
     }
+
+    public void setText (String item)
+    {
+        TextView view = (TextView) getView().findViewById(R.id.tv_fr);
+        view.setText(item);
+    }
+
 }

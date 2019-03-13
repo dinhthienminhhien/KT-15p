@@ -14,7 +14,7 @@ public class Fragment_Button extends Fragment {
 
     Button btn_a , btn_b , btn_c ;
 
-
+    truyendl tdl ;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -28,16 +28,31 @@ public class Fragment_Button extends Fragment {
         FragmentManager fragmentManager = getFragmentManager();
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
+        tdl = (truyendl) getActivity();
+
+
         btn_a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment_Button fragment_button = new Fragment_Button();
-                fragmentTransaction .add(R.id.layoutFB,fragment_button);
-                fragmentTransaction.commit();
+
+               tdl.thaydoi ("This is A");
 
             }
         });
 
+        btn_b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tdl.thaydoi("This is B");
+            }
+        });
+
+        btn_c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tdl.thaydoi("This is C");
+            }
+        });
         return view ;
     }
 }
